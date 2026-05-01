@@ -46,7 +46,7 @@ git push -u origin main
 
 Your site will be live at:
 ```
-https://awaknd-1.github.io/shaikhouni-lab/
+https://username.github.io/shaikhouni-lab/
 ```
 
 *(Replace `YOUR_USERNAME` with your GitHub username and `shaikhouni-lab` with your repo name.)*
