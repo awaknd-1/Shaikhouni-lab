@@ -38,7 +38,6 @@
 <!-- ── Overview ──────────────────────────────────────────────────── -->
 <section class="section">
   <div class="container">
-    <span class="section-tag">Overview</span>
     <h2 class="section-title">Our Research Mission</h2>
     <p style="color:var(--text-muted); max-width:780px; font-size:1.05rem; line-height:1.8;">
       The Shaikhouni Lab combines clinical neurosurgical expertise with rigorous computational
@@ -53,15 +52,14 @@
 <!-- ── Projects ──────────────────────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container">
-    <span class="section-tag">Projects</span>
-    <h2 class="section-title">Current Research Programs</h2>
+    <h2 class="section-title">Projects</h2>
 
     <!-- Project 1 -->
     <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:2rem; overflow:hidden; display:grid; grid-template-columns: 6px 1fr;" >
       <div style="background:var(--teal);"></div>
       <div style="padding:2rem;">
         <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
-          <span style="font-size:1.8rem;">🧬</span>
+
           <h3 style="font-size:1.2rem;">Dravet Syndrome: Electrophysiological Phenotyping</h3>
         </div>
         <p style="color:var(--text-muted); margin-bottom:1rem;">
@@ -85,22 +83,22 @@
       <div style="background:var(--navy);"></div>
       <div style="padding:2rem;">
         <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
-          <span style="font-size:1.8rem;">🌙</span>
-          <h3 style="font-size:1.2rem;">Sleep Architecture as a Biomarker in Pediatric Epilepsy</h3>
+
+          <h3 style="font-size:1.2rem;">EEG Analysis Before and After Corpus Callosotomy</h3>
         </div>
         <p style="color:var(--text-muted); margin-bottom:1rem;">
-          Disrupted sleep is a hallmark of many childhood epilepsies, yet quantitative
-          sleep biomarkers remain underutilized clinically. We develop and validate
-          automated sleep-staging pipelines using YASA and deep learning, then apply
-          them to characterize sleep macro- and micro-architecture — including NREM
-          spindle density, slow-wave activity, and REM dynamics — in Dravet patients
-          compared to controls.
+          Corpus callosotomy (CC) is a palliative surgical procedure that disrupts
+          interhemispheric seizure propagation in children with drug-resistant epilepsy.
+          We analyze scalp EEG recordings acquired before and after CC to characterize
+          how callosal disconnection alters synchrony, network topology, and interictal
+          discharge patterns — with the goal of identifying electrophysiological
+          predictors of surgical outcome.
         </p>
         <ul style="color:var(--text-muted); font-size:0.92rem; padding-left:1.2rem; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">
-          <li>Automated sleep staging (N1/N2/N3/REM/Wake) from clinical EEG</li>
-          <li>NREM sleep spindle detection and morphological analysis</li>
-          <li>Sleep slow-oscillation and spindle coupling in epileptic networks</li>
-          <li>Sleep metrics as predictors of treatment response</li>
+          <li>Quantification of interhemispheric coherence pre- and post-CC</li>
+          <li>Changes in interictal epileptiform discharge burden and distribution</li>
+          <li>Functional connectivity reorganization following callosal transection</li>
+          <li>EEG correlates of seizure reduction and clinical outcome</li>
         </ul>
       </div>
     </div>
@@ -110,8 +108,8 @@
       <div style="background:var(--accent);"></div>
       <div style="padding:2rem;">
         <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
-          <span style="font-size:1.8rem;">🤖</span>
-          <h3 style="font-size:1.2rem;">Machine Learning for EEG Segmentation &amp; Seizure Detection</h3>
+
+          <h3 style="font-size:1.2rem;">Machine Learning for EEG Segmentation &amp; Spike Detection</h3>
         </div>
         <p style="color:var(--text-muted); margin-bottom:1rem;">
           Manual annotation of pediatric EEG is time-intensive and subject to
@@ -134,7 +132,7 @@
       <div style="background:var(--teal-light);"></div>
       <div style="padding:2rem;">
         <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
-          <span style="font-size:1.8rem;">⚡</span>
+
           <h3 style="font-size:1.2rem;">Neural Circuit Mapping for Epilepsy Surgery</h3>
         </div>
         <p style="color:var(--text-muted); margin-bottom:1rem;">
@@ -155,56 +153,6 @@
   </div>
 </section>
 
-<!-- ── Tools & Methods ───────────────────────────────────────────── -->
-<section class="section">
-  <div class="container">
-    <span class="section-tag">Tools &amp; Methods</span>
-    <h2 class="section-title">Our Toolkit</h2>
-    <p class="section-subtitle">
-      We develop open-source software and leverage best-in-class frameworks.
-    </p>
-    <div class="grid-3">
-      <div class="card">
-        <h3>MNE-Python</h3>
-        <p>EEG/MEG preprocessing, source estimation, and time-frequency analysis.</p>
-      </div>
-      <div class="card">
-        <h3>YASA</h3>
-        <p>Automated sleep staging and spindle/slow-wave detection from polysomnographic signals.</p>
-      </div>
-      <div class="card">
-        <h3>PyTorch / scikit-learn</h3>
-        <p>Deep learning models and classical machine learning for EEG classification tasks.</p>
-      </div>
-      <div class="card">
-        <h3>Python / Pandas</h3>
-        <p>Data wrangling, statistical analysis, and reproducible research pipelines.</p>
-      </div>
-      <div class="card">
-        <h3>Jupyter Notebooks</h3>
-        <p>Interactive analysis, visualization, and reproducible reporting for all projects.</p>
-      </div>
-      <div class="card">
-        <h3>GitHub</h3>
-        <p>Version-controlled, collaboratively developed code shared openly with the research community.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container footer-inner">
-    <div>
-      <span class="footer-brand">Shaikhouni Lab</span><br />
-      Department of Neurosurgery · Nationwide Children's Hospital<br />
-      700 Children's Dr, Columbus, OH 43205
-    </div>
-    <div style="text-align:right;">
-      <a href="mailto:ammar.shaikhouni@nationwidechildrens.org">ammar.shaikhouni@nationwidechildrens.org</a><br />
-      <span style="margin-top:0.3rem; display:inline-block;">&copy; <span id="yr"></span> Shaikhouni Lab.</span>
-    </div>
-  </div>
-</footer>
 
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
