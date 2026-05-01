@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications — Shaikhouni Lab</title>
+  <meta name="description" content="Publications from the Shaikhouni Lab at Nationwide Children's Hospital." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="lab-name">Shaikhouni Lab</span>
+      <span class="lab-dept">Nationwide Children's Hospital · Neurosurgery</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Publications</h1>
+    <p>Peer-reviewed articles, preprints, and conference contributions from the lab.</p>
+  </div>
+</section>
+
+<!-- ── Filter tabs ───────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+
+    <!-- Year nav -->
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2.5rem;">
+      <button onclick="filterYear('all')" id="tab-all" class="pub-tab pub-tab-active">All</button>
+      <button onclick="filterYear('2025')" id="tab-2025" class="pub-tab">2025</button>
+      <button onclick="filterYear('2024')" id="tab-2024" class="pub-tab">2024</button>
+      <button onclick="filterYear('2023')" id="tab-2023" class="pub-tab">2023</button>
+      <button onclick="filterYear('older')" id="tab-older" class="pub-tab">Older</button>
+    </div>
+
+    <!-- ── 2025 ── -->
+    <h3 style="color:var(--navy); font-size:1.05rem; margin-bottom:1rem; border-bottom:2px solid var(--border); padding-bottom:0.5rem;" class="year-heading" data-year="2025">2025</h3>
+    <div class="pub-list" style="margin-bottom:2.5rem;" data-year="2025">
+
+      <div class="pub-item">
+        <p class="pub-title">
+          Automated Sleep Staging in Dravet Syndrome: Validation of a Scalable EEG Pipeline
+        </p>
+        <p class="pub-authors">Shaikhouni A, [Co-authors]. <span class="pub-year">2025</span></p>
+        <p class="pub-journal">
+          <em>Journal of Child Neurology</em> — In preparation.
+        </p>
+      </div>
+
+      <div class="pub-item">
+        <p class="pub-title">
+          Sleep Spindle Density as a Biomarker of Anti-Seizure Medication Response in Pediatric Dravet Syndrome
+        </p>
+        <p class="pub-authors">Shaikhouni A, [Co-authors]. <span class="pub-year">2025</span></p>
+        <p class="pub-journal">
+          <em>Epilepsia</em> — In preparation.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ── 2024 ── -->
+    <h3 style="color:var(--navy); font-size:1.05rem; margin-bottom:1rem; border-bottom:2px solid var(--border); padding-bottom:0.5rem;" class="year-heading" data-year="2024">2024</h3>
+    <div class="pub-list" style="margin-bottom:2.5rem;" data-year="2024">
+
+      <div class="pub-item">
+        <p class="pub-title">
+          [Add publication title here]
+        </p>
+        <p class="pub-authors">Author A, Author B, Shaikhouni A. <span class="pub-year">2024</span></p>
+        <p class="pub-journal">
+          <em>Journal Name</em>, Volume(Issue), pages.
+          <a href="#" style="margin-left:0.6rem; font-size:0.82rem; font-weight:600;">[DOI]</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ── 2023 ── -->
+    <h3 style="color:var(--navy); font-size:1.05rem; margin-bottom:1rem; border-bottom:2px solid var(--border); padding-bottom:0.5rem;" class="year-heading" data-year="2023">2023</h3>
+    <div class="pub-list" style="margin-bottom:2.5rem;" data-year="2023">
+
+      <div class="pub-item">
+        <p class="pub-title">
+          [Add publication title here]
+        </p>
+        <p class="pub-authors">Author A, Author B, Shaikhouni A. <span class="pub-year">2023</span></p>
+        <p class="pub-journal">
+          <em>Journal Name</em>, Volume(Issue), pages.
+          <a href="#" style="margin-left:0.6rem; font-size:0.82rem; font-weight:600;">[DOI]</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ── Older ── -->
+    <h3 style="color:var(--navy); font-size:1.05rem; margin-bottom:1rem; border-bottom:2px solid var(--border); padding-bottom:0.5rem;" class="year-heading" data-year="older">Earlier Work</h3>
+    <div class="pub-list" data-year="older">
+
+      <div class="pub-item">
+        <p class="pub-title">
+          [Add earlier publication title here]
+        </p>
+        <p class="pub-authors">Shaikhouni A, et al. <span class="pub-year">—</span></p>
+        <p class="pub-journal">
+          <em>Journal Name</em>.
+          <a href="#" style="margin-left:0.6rem; font-size:0.82rem; font-weight:600;">[DOI]</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Google Scholar link -->
+    <div style="margin-top:3rem; padding:1.5rem; background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <strong style="color:var(--navy);">Full publication list on Google Scholar</strong><br />
+        <span style="color:var(--text-muted); font-size:0.9rem;">Search "Ammar Shaikhouni" for the complete list of peer-reviewed publications.</span>
+      </div>
+      <a href="https://scholar.google.com/scholar?q=Ammar+Shaikhouni" target="_blank" rel="noopener" class="btn btn-primary">Google Scholar →</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <span class="footer-brand">Shaikhouni Lab</span><br />
+      Department of Neurosurgery · Nationwide Children's Hospital<br />
+      700 Children's Dr, Columbus, OH 43205
+    </div>
+    <div style="text-align:right;">
+      <a href="mailto:ammar.shaikhouni@nationwidechildrens.org">ammar.shaikhouni@nationwidechildrens.org</a><br />
+      <span style="margin-top:0.3rem; display:inline-block;">&copy; <span id="yr"></span> Shaikhouni Lab.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Pub tab styles & filter script ──────────────────────────── -->
+<style>
+.pub-tab {
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pub-tab:hover { border-color: var(--teal); color: var(--teal); }
+.pub-tab-active { background: var(--navy); color: #fff !important; border-color: var(--navy); }
+</style>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+function filterYear(y) {
+  document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('pub-tab-active'));
+  document.getElementById('tab-' + y).classList.add('pub-tab-active');
+
+  document.querySelectorAll('.pub-list, .year-heading').forEach(el => {
+    const ey = el.dataset.year;
+    el.style.display = (y === 'all' || ey === y) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

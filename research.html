@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Shaikhouni Lab</title>
+  <meta name="description" content="Research programs in pediatric epilepsy, EEG analysis, sleep neuroscience, and neural circuit dynamics at the Shaikhouni Lab." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="lab-name">Shaikhouni Lab</span>
+      <span class="lab-dept">Nationwide Children's Hospital · Neurosurgery</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Research</h1>
+    <p>Exploring the neural basis of pediatric epilepsy through computation and clinical neuroscience.</p>
+  </div>
+</section>
+
+<!-- ── Overview ──────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <span class="section-tag">Overview</span>
+    <h2 class="section-title">Our Research Mission</h2>
+    <p style="color:var(--text-muted); max-width:780px; font-size:1.05rem; line-height:1.8;">
+      The Shaikhouni Lab combines clinical neurosurgical expertise with rigorous computational
+      analysis to understand how abnormal neural activity arises and propagates in pediatric
+      epilepsy. By developing novel algorithms and leveraging multi-site EEG datasets, we aim
+      to identify reliable biomarkers and inform better surgical and therapeutic outcomes for
+      children with treatment-resistant seizures.
+    </p>
+  </div>
+</section>
+
+<!-- ── Projects ──────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="section-tag">Projects</span>
+    <h2 class="section-title">Current Research Programs</h2>
+
+    <!-- Project 1 -->
+    <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:2rem; overflow:hidden; display:grid; grid-template-columns: 6px 1fr;" >
+      <div style="background:var(--teal);"></div>
+      <div style="padding:2rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
+          <span style="font-size:1.8rem;">🧬</span>
+          <h3 style="font-size:1.2rem;">Dravet Syndrome: Electrophysiological Phenotyping</h3>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">
+          Dravet Syndrome is a severe, treatment-resistant epileptic encephalopathy
+          typically caused by <em>SCN1A</em> mutations. We are building the first large-scale
+          multi-site EEG cohort to characterize the electrophysiological phenotype across
+          disease stages, leveraging data from Nationwide Children's Hospital and
+          Children's Hospital Los Angeles.
+        </p>
+        <ul style="color:var(--text-muted); font-size:0.92rem; padding-left:1.2rem; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">
+          <li>Automated EEG preprocessing and epoch-level quality control</li>
+          <li>Unsupervised clustering of sleep and wake EEG phenotypes</li>
+          <li>Longitudinal tracking of EEG signatures with anti-seizure medication changes</li>
+          <li>Correlation of EEG features with cognitive and behavioral outcomes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:2rem; overflow:hidden; display:grid; grid-template-columns: 6px 1fr;">
+      <div style="background:var(--navy);"></div>
+      <div style="padding:2rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
+          <span style="font-size:1.8rem;">🌙</span>
+          <h3 style="font-size:1.2rem;">Sleep Architecture as a Biomarker in Pediatric Epilepsy</h3>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">
+          Disrupted sleep is a hallmark of many childhood epilepsies, yet quantitative
+          sleep biomarkers remain underutilized clinically. We develop and validate
+          automated sleep-staging pipelines using YASA and deep learning, then apply
+          them to characterize sleep macro- and micro-architecture — including NREM
+          spindle density, slow-wave activity, and REM dynamics — in Dravet patients
+          compared to controls.
+        </p>
+        <ul style="color:var(--text-muted); font-size:0.92rem; padding-left:1.2rem; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">
+          <li>Automated sleep staging (N1/N2/N3/REM/Wake) from clinical EEG</li>
+          <li>NREM sleep spindle detection and morphological analysis</li>
+          <li>Sleep slow-oscillation and spindle coupling in epileptic networks</li>
+          <li>Sleep metrics as predictors of treatment response</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:2rem; overflow:hidden; display:grid; grid-template-columns: 6px 1fr;">
+      <div style="background:var(--accent);"></div>
+      <div style="padding:2rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
+          <span style="font-size:1.8rem;">🤖</span>
+          <h3 style="font-size:1.2rem;">Machine Learning for EEG Segmentation &amp; Seizure Detection</h3>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">
+          Manual annotation of pediatric EEG is time-intensive and subject to
+          inter-rater variability. We are building automated pipelines for epoch
+          segmentation, artifact detection, and ictal event classification using
+          supervised and self-supervised learning approaches validated against
+          expert clinical annotations.
+        </p>
+        <ul style="color:var(--text-muted); font-size:0.92rem; padding-left:1.2rem; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">
+          <li>Transformer-based EEG foundation models for seizure detection</li>
+          <li>Self-supervised pre-training on unlabeled pediatric EEG archives</li>
+          <li>Cross-patient and cross-site generalization benchmarks</li>
+          <li>Clinical integration and real-time alerting systems</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; display:grid; grid-template-columns: 6px 1fr;">
+      <div style="background:var(--teal-light);"></div>
+      <div style="padding:2rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;">
+          <span style="font-size:1.8rem;">⚡</span>
+          <h3 style="font-size:1.2rem;">Neural Circuit Mapping for Epilepsy Surgery</h3>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">
+          For children with drug-resistant focal epilepsy, surgical resection or
+          neuromodulation offers the best chance of seizure freedom. We use
+          intracranial EEG and functional connectivity analysis to map epileptogenic
+          networks preoperatively and evaluate surgical outcomes.
+        </p>
+        <ul style="color:var(--text-muted); font-size:0.92rem; padding-left:1.2rem; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">
+          <li>Interictal and ictal network analysis with SEEG/ECoG</li>
+          <li>Effective connectivity and directed information flow</li>
+          <li>Outcome prediction from network biomarkers</li>
+          <li>Neuronavigation integration in the OR</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Tools & Methods ───────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <span class="section-tag">Tools &amp; Methods</span>
+    <h2 class="section-title">Our Toolkit</h2>
+    <p class="section-subtitle">
+      We develop open-source software and leverage best-in-class frameworks.
+    </p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>MNE-Python</h3>
+        <p>EEG/MEG preprocessing, source estimation, and time-frequency analysis.</p>
+      </div>
+      <div class="card">
+        <h3>YASA</h3>
+        <p>Automated sleep staging and spindle/slow-wave detection from polysomnographic signals.</p>
+      </div>
+      <div class="card">
+        <h3>PyTorch / scikit-learn</h3>
+        <p>Deep learning models and classical machine learning for EEG classification tasks.</p>
+      </div>
+      <div class="card">
+        <h3>Python / Pandas</h3>
+        <p>Data wrangling, statistical analysis, and reproducible research pipelines.</p>
+      </div>
+      <div class="card">
+        <h3>Jupyter Notebooks</h3>
+        <p>Interactive analysis, visualization, and reproducible reporting for all projects.</p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>Version-controlled, collaboratively developed code shared openly with the research community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <span class="footer-brand">Shaikhouni Lab</span><br />
+      Department of Neurosurgery · Nationwide Children's Hospital<br />
+      700 Children's Dr, Columbus, OH 43205
+    </div>
+    <div style="text-align:right;">
+      <a href="mailto:ammar.shaikhouni@nationwidechildrens.org">ammar.shaikhouni@nationwidechildrens.org</a><br />
+      <span style="margin-top:0.3rem; display:inline-block;">&copy; <span id="yr"></span> Shaikhouni Lab.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
